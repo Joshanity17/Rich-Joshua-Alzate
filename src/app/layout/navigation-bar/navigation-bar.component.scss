@@ -1,0 +1,93 @@
+@import "../../../assets/sass-utilities/variable";
+@import "../../../styles.scss";
+
+#navigationBarSection {
+    flex-direction: row;
+    height: 7.2rem;
+
+    #logoSection {
+        a {
+            margin-left: 1.2rem;
+            height: 6.2rem;
+            #logo {
+                height: inherit;
+            }
+        }
+    }
+
+    .container {
+        flex-basis: 50%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+    }
+
+    #helloSection {
+        justify-content: flex-end;
+        background: $darkColor;
+
+        #helloButton {
+            border-radius: 50px;
+            background-color: transparent;
+            color: $lightColor;
+            font-size: 28px;
+            font-family: $titleFont;
+
+            height: 3.5rem;
+            width: 200px;
+            margin-right: 1.2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+                &:after {
+                    content: "\1F44B";
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                    transform: scaleX(-1);
+                }
+            }
+
+            &:hover {
+                span {
+                    padding-right: 25px;
+                    &:after {
+                        opacity: 1;
+                        right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to(small-only, medium-only) {
+    #navigationBarSection {
+        #logoSection {
+            a {
+                height: 4.2rem;
+            }
+        }
+
+        #helloSection {
+            background: $lightColor;
+            #helloButton {
+                font-size: 20px;
+                color: $darkColor;
+
+                height: 2.5rem;
+                width: 150px;
+            }
+        }
+    }
+}

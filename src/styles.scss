@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/sass-utilities/variable";
+
+@mixin respond-to($keys...) {
+    $value: null;
+    @each $key in $keys {
+        $value: append($value, map-get($breakpoints, $key), "comma");
+    }
+
+    @if $value != null {
+        @media #{$value} {
+            @content;
+        }
+    } @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+body {
+    background-color: $lightColor;
+    max-width: 100vh;
+    overflow-x: hidden;
+    margin: unset;
+}
+
+.section {
+    width: 100vw;
+    display: flex;
+}
+
+.column {
+    flex-grow: 1;
+}
+
+.lightColor {
+    color: $lightColor;
+}
+
+.darkColor {
+    color: $darkColor;
+}
+
+.backgroundLight {
+    background: $lightColor;
+}
+
+.backgroundDark {
+    background: $darkColor;
+}
+
+#name {
+    font-family: $nameFont;
+}
+
+h1 {
+    font-family: $titleFont;
+}
+
+h4 {
+    font-family: $textFont;
+}
+
+@include respond-to(small-only, medium-only) {
+    h1, h4 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,45 @@
+@import "../../../styles.scss";
+
+#homeSection {
+    height: 86vh;
+    .detailsSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        padding: 3.2rem;
+    }
+
+    #name {
+        font-size: 3rem;
+        margin-bottom: unset;
+    }
+
+    #descriptionDetails {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    #avatarImage {
+        width: 13.125rem;
+    }
+}
+
+@include respond-to(small-only, medium-only) {
+    #homeSection {
+        flex-wrap: wrap;
+        .detailsSection {
+            flex-basis: 100%;
+        }
+
+        #nameDetails {
+            flex-wrap: wrap;
+            #avatarImage {
+                width: 8.125rem;
+            }
+            #name {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
