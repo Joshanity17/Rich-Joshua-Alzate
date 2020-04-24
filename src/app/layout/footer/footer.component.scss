@@ -1,3 +1,57 @@
-#navigationBarSection {
-    flex-direction: row;
+@import "../../../assets/sass-utilities/variable";
+@import "../../../styles.scss";
+
+#footerSection {
+    height: 90vh;
+    background-color: $darkColor;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #logoSection {
+        #jLogo {
+            height: inherit;
+            #stroke {
+                fill: $lightColor !important;
+            }
+        }
+    }
+
+    #mottoSection {
+        h4 {
+            color: $lightColor;
+            font-weight: 400;
+        }
+    }
+
+    #socialSection {
+        display: flex;
+        .socialMediaLinks {
+            height: 3rem;
+            margin: 0 0.5rem;
+            display: flex;
+            align-items: center;
+            a {
+                height: 2rem;
+                width: 2rem;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border: 2px solid $lightColor;
+                border-radius: 100%;
+                fa-icon {
+                    color: $lightColor;
+                }
+            }
+        }
+    }
+
+    #copyrightSection {
+        #copyright {
+            color: $lightColor;
+        }
+    }
 }

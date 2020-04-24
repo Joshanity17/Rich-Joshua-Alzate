@@ -8,6 +8,10 @@ import { NavigationBarComponent } from './layout/navigation-bar/navigation-bar.c
 import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -17,9 +21,15 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [LayoutComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow,
+      faEnvelope, faCopyright);
+  }
+}

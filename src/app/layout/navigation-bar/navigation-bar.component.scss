@@ -8,9 +8,9 @@
     #logoSection {
         a {
             margin-left: 1.2rem;
-            height: 6.2rem;
-            #logo {
+            #jLogo {
                 height: inherit;
+                width: inherit;
             }
         }
     }
@@ -73,12 +73,6 @@
 
 @include respond-to(small-only, medium-only) {
     #navigationBarSection {
-        #logoSection {
-            a {
-                height: 4.2rem;
-            }
-        }
-
         #helloSection {
             background: $lightColor;
             #helloButton {

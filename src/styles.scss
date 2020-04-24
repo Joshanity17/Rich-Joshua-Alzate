@@ -56,12 +56,29 @@ h1 {
     font-family: $titleFont;
 }
 
-h4 {
+h4,
+h5 {
     font-family: $textFont;
 }
 
+.brandLogo {
+    a {
+        height: 6.2rem;
+        object {
+            height: inherit;
+        }
+    }
+}
+
 @include respond-to(small-only, medium-only) {
-    h1, h4 {
+    h1,
+    h4 {
         text-align: center;
+    }
+
+    .brandLogo {
+        a {
+            height: 4.2rem;
+        }
     }
 }
