@@ -55,7 +55,6 @@
             flex-basis: 50%;
 
             padding: 5em 2em;
-            border-bottom: 0px solid $color4;
             border-right: 1px solid $color4;
 
             img {
@@ -75,6 +74,25 @@
                 list-style: none;
                 padding: unset;
             }
+        }
+    }
+}
+
+#companySection {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+
+    #companyList {
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+
+        .companyLogo {
+            flex-grow: 1;
+            flex-basis: 50%;
+            height: 5rem;
+            margin: 0 1rem;
         }
     }
 }
@@ -108,8 +126,19 @@
             flex-direction: column;
         }
         .column {
-            border-bottom: 1px solid $color4 !important;
-            border-right: 0px solid $color4 !important;
+            border-bottom: 1px solid $color4;
+        }
+    }
+
+    #companySection {
+        #companyList {
+            flex-direction: column;
+            margin-top: 5rem;
+
+            .companyLogo {
+                height: 2rem;
+                margin: 2rem 0;
+            }
         }
     }
 }

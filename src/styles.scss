@@ -34,7 +34,8 @@ h5 {
     font-family: $textFont;
 }
 
-p, ul {
+p,
+ul {
     font-family: $textFont;
 }
 
@@ -76,14 +77,18 @@ p, ul {
     }
 }
 
-.icon{
+.icon {
     height: 14px;
     width: 14px;
 }
 
 @include respond-to(small-only, medium-only) {
     h1,
-    h4 {
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
         text-align: center;
     }
 
