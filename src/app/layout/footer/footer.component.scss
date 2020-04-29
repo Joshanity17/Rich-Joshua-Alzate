@@ -3,7 +3,7 @@
 
 #footerSection {
     height: 90vh;
-    background-color: $darkColor;
+    background-color: $color5;
 
     flex-direction: column;
     align-items: center;
@@ -13,14 +13,14 @@
         #jLogo {
             height: inherit;
             #stroke {
-                fill: $lightColor !important;
+                fill: $color1 !important;
             }
         }
     }
 
     #mottoSection {
         h4 {
-            color: $lightColor;
+            color: $color1;
             font-weight: 400;
         }
     }
@@ -40,10 +40,10 @@
                 justify-content: center;
                 align-items: center;
 
-                border: 2px solid $lightColor;
+                border: 2px solid $color1;
                 border-radius: 100%;
                 fa-icon {
-                    color: $lightColor;
+                    color: $color1;
                 }
             }
         }
@@ -51,7 +51,7 @@
 
     #copyrightSection {
         #copyright {
-            color: $lightColor;
+            color: $color1;
         }
     }
 }

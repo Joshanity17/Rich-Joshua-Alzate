@@ -11,6 +11,11 @@
             #jLogo {
                 height: inherit;
                 width: inherit;
+                #stroke {
+                    stroke-width: 20;
+                    animation: letter-animation 5s linear forwards;
+                    animation-delay: 5.1s;
+                }
             }
         }
     }
@@ -24,12 +29,13 @@
 
     #helloSection {
         justify-content: flex-end;
-        background: $darkColor;
+        background: $color5;
 
         #helloButton {
+            border: 1px solid $color1;
             border-radius: 50px;
             background-color: transparent;
-            color: $lightColor;
+            color: $color1;
             font-size: 28px;
             font-family: $titleFont;
 
@@ -67,6 +73,11 @@
                     }
                 }
             }
+
+            &:focus {
+                outline: 0 !important;
+                -webkit-tap-highlight-color: transparent;
+            }
         }
     }
 }
@@ -74,10 +85,11 @@
 @include respond-to(small-only, medium-only) {
     #navigationBarSection {
         #helloSection {
-            background: $lightColor;
+            background: $color1;
             #helloButton {
+                border: 1px solid $color5;
                 font-size: 20px;
-                color: $darkColor;
+                color: $color5;
 
                 height: 2.5rem;
                 width: 150px;

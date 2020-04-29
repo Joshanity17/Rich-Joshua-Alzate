@@ -12,4 +12,8 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  contact(): void {
+    window.location.assign('mailto:josh@alzate17@gmail.com');
+  }
+
 }

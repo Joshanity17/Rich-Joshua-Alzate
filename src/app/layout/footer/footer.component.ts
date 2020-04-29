@@ -31,6 +31,10 @@ export class FooterComponent implements OnInit {
         link: 'https://stackoverflow.com/users/2637261/rich'
       },
       {
+        fontAwesome: FontAwesomeIcon.Patreon,
+        link: 'https://www.patreon.com/rjalzate'
+      },
+      {
         fontAwesome: FontAwesomeIcon.Envelope,
         link: 'mailto:josh.alzate17@gmail.com'
       }

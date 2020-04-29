@@ -1,0 +1,9 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: Rich-Joshua-Alzate/index.html
+  upload: Rich-Joshua-Alzate/index.html
+- url: /
+  static_dir: Rich-Joshua-Alzate

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&family=Noto+Sans+SC:wght@100&family=Oleo+Script+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&family=Noto+Sans+SC:wght@100&family=Oleo+Script+Swash+Caps&display=swap");
 @import "./function";
 
 // Defining values
@@ -35,8 +35,11 @@ $breakpoints: (
     xxlarge-only: $xxlarge-only,
 );
 
-$lightColor: rgb(255, 255, 226);
-$darkColor: rgb(51, 39, 21);
+$color1: #fffee8ff;
+$color2: #ccc8b3ff;
+$color3: #99937fff;
+$color4: #665d4aff;
+$color5: #332715ff;
 
 $nameFont: "Oleo Script Swash Caps", cursive;
 $textFont: "Noto Sans SC", sans-serif;

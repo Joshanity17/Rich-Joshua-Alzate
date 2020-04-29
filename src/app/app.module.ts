@@ -9,8 +9,11 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faEnvelope, faCopyright } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faCopyright, faDrum, faDatabase, faGuitar } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow, faPatreon, faJsSquare,
+  faHtml5, faCss3Alt, faSass, faAngular, faNodeJs
+} from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow } from '@forta
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow,
-      faEnvelope, faCopyright);
+    library.addIcons(faLinkedinIn, faTelegramPlane, faGithub, faStackOverflow, faPatreon, faJsSquare, faHtml5,
+      faCss3Alt, faSass, faAngular, faNodeJs,
+      faEnvelope, faCopyright, faDrum, faDatabase, faGuitar);
   }
 }

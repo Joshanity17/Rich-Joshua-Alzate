@@ -17,10 +17,25 @@
 }
 
 body {
-    background-color: $lightColor;
+    background-color: $color1;
     max-width: 100vh;
     overflow-x: hidden;
     margin: unset;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $titleFont;
+}
+
+h4,
+h5 {
+    font-family: $textFont;
+}
+
+p, ul {
+    font-family: $textFont;
 }
 
 .section {
@@ -33,32 +48,23 @@ body {
 }
 
 .lightColor {
-    color: $lightColor;
+    color: $color1;
 }
 
 .darkColor {
-    color: $darkColor;
+    color: $color5;
 }
 
 .backgroundLight {
-    background: $lightColor;
+    background: $color1;
 }
 
 .backgroundDark {
-    background: $darkColor;
+    background: $color5;
 }
 
 #name {
     font-family: $nameFont;
-}
-
-h1 {
-    font-family: $titleFont;
-}
-
-h4,
-h5 {
-    font-family: $textFont;
 }
 
 .brandLogo {
@@ -68,6 +74,11 @@ h5 {
             height: inherit;
         }
     }
+}
+
+.icon{
+    height: 14px;
+    width: 14px;
 }
 
 @include respond-to(small-only, medium-only) {

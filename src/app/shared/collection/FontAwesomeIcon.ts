@@ -16,6 +16,10 @@ export const FontAwesomeIcon = {
         type: 'fab',
         icon: 'stack-overflow'
     },
+    Patreon: {
+        type: 'fab',
+        icon: 'patreon'
+    },
     Envelope: {
         type: 'fas',
         icon: 'envelope'
