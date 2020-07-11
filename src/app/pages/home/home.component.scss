@@ -97,6 +97,41 @@
     }
 }
 
+#projectReachSection {
+    justify-content: center;
+    margin-bottom: -50px;
+    #container {
+        display: flex;
+        align-items: center;
+
+        margin: 0 5rem;
+        width: inherit;
+        border-radius: 25px;
+        color: $color1;
+        background-color: $color3;
+        .column {
+            display: flex;
+            justify-content: center;
+            flex-basis: 50%;
+        }
+        #contactButton {
+            border: 1px solid #fffee8ff;
+            border-radius: 50px;
+            background-color: transparent;
+            color: #fffee8ff;
+            font-size: 20px;
+            font-family: "Baloo Tammudu 2", cursive;
+            height: 2.5rem;
+            width: 200px;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+}
+
 @include respond-to(small-only, medium-only) {
     #homeSection {
         flex-wrap: wrap;
@@ -138,6 +173,17 @@
             .companyLogo {
                 height: 2rem;
                 margin: 2rem 0;
+            }
+        }
+    }
+
+    #projectReachSection {
+        margin-bottom: -155px;
+        #container {
+            flex-direction: column;
+            margin: 0 1rem;
+            .column {
+                margin: 2rem 1rem;
             }
         }
     }
