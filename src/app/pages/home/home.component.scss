@@ -11,9 +11,12 @@
         padding: 3.2rem;
     }
 
-    #name {
-        font-size: 3rem;
-        margin-bottom: unset;
+    #textDetails {
+        margin-left: 2rem;
+        #name {
+            font-size: 3rem;
+            margin-bottom: unset;
+        }
     }
 
     #descriptionDetails {
@@ -144,8 +147,11 @@
             #avatarImage {
                 width: 8.125rem;
             }
-            #name {
-                font-size: 1.8rem;
+            #textDetails {
+                margin-left: unset;
+                #name {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
